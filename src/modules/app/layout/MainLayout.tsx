@@ -38,6 +38,17 @@ export const MainLayout: FC = (): ReactElement => {
         />
       ),
     },
+    {
+      template: () => (
+        
+        <NavLink
+          to={"/dashboard/users"}
+          end
+          icon={"pi pi-pw pi-shopping-cart"}
+          label={"User Register"}
+        />
+      ),
+    },
   ];
   return (
     <div className={"container"}>

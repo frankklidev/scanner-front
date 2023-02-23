@@ -12,4 +12,8 @@ export const myLocations: Locations[] = [
     name: "sales",
     crud: ["edit", "create"],
   },
+  {
+    name: "users",
+    crud: ["edit", "create"],
+  },
 ];

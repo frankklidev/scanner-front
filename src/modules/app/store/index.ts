@@ -12,6 +12,7 @@ import authReducer from "../../auth/redux";
 import messageReducer from "../../shared/redux/message";
 import productsReducer from "../../products/redux";
 import salesReducer from "../../sales/redux/index";
+import usersReducer from "../../users/redux";
 
 const middleware = [thunkMiddleware];
 
@@ -20,6 +21,7 @@ const rootReducer = combineReducers({
   message: messageReducer,
   products: productsReducer,
   sales: salesReducer,
+  users: usersReducer,
 });
 const store = configureStore({
   reducer: rootReducer,

@@ -80,7 +80,7 @@ export const LoginPage: FC = (): ReactElement => {
                 formik.touched.password ? formik.errors.password : undefined
               }
             />
-            <div className="flex justify-content-end">
+            {/* <div className="flex justify-content-end">
               <span
                 className={"text-primary font-semibold cursor-pointer mb-3"}
                 onClick={() => {
@@ -89,7 +89,7 @@ export const LoginPage: FC = (): ReactElement => {
               >
                 Don't have an account yet? Register
               </span>
-            </div>
+            </div> */}
             <Button
               disabled={!formik.isValid || !formik.dirty}
               label={"Login"}
